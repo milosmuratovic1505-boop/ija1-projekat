@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+#pocetna{
+     display: flex;
+    flex-direction: column;
+    background-image: url(../images/pozadina.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 130vh; 
+    
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    top: 0;   
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid blue;
+    width: 100%;
+    height: 50px;
+
+}
+.content {
+     flex: 1;
+    padding-top: 100px;
+}
+
+.nav-menu{
+    text-align: center;
+    width: 100%;
+}
+.nav-menu li{
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    top: 15px;
+
+}
+
+
+
+
+.Logo-slika{
+    height: 50px;
+    position: absolute;
+    left: 0px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #0a76cf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    font-size: 15px;
+    font-family:sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    background-color:#0a76cf ;
+    color: white;
+    transition: 1.5s;
+    border-radius: 30%;
+}
+.sadrzaj-prvi{
+   margin-top: 400px;
+   left: 20px;
+   color: white;
+   font-size: 30px;
+}
+.dugme-onama{
+    position: relative;
+    top: 10px;
+    left: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #0a76cf;
+    color: white;
+    text-decoration: none;
+    border-radius: 40%;
+}
+.dugme-onama:active{
+    background-color: darkblue;
+    border: 1px dashed black;
+    animation: 0.7s;
+}
+.sadrzaj-drugi{
+    margin-top: 550px;
+}
+.sadrzaj-drugi h1{
+    font-size: 50px;
+    max-width: 70%;
+}
+.sadrzaj-drugi p{
+   position: relative;
+    margin-top: 50px;
+    margin-left: 30%;
+    
+}
+.slika1{
+   padding: 20px;
+    height: 300px;
+    
+}
+.slika2{
+    height: 300px;
+    padding: 20px;
+}
+.slika3{
+    height: 300px;
+    padding: 20px;
+}
+.glavni-footer{
+   background-color:#0a76cf;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #0a76cf
+}
+#Logo{
+    color: rgba(226, 230, 233, 0.485);
+    font-family: mojfont;
+    position:absolute;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgba(226, 230, 233, 0.485);
+    border-radius: 50%;
+    padding: 5px;
+    left: 10px;
+    letter-spacing: 5px;
+    animation-name: animacija;
+    animation-duration:4s;
+
+}
+@font-face {
+    font-family: mojfont;
+    src: url(../font/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+}
+#onama .header{
+    height: 20%;
+    background-color:#0a76cf;
+    
+}
+#onama .glavni-footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+@keyframes animacija {
+    from{background-color: #0a76cf; color: #0a76cf; border: #0a76cf;}
+    to{background-color: rgba(226, 230, 233, 0.485);}
+}
+.onama-naslov{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: wheat;
+    padding: 30px 30px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.onama-text{
+    position: relative;
+    top: 25%;
+   height: 60%;
+    padding-left: 5%;
+    background-image: url(../images/onamapozadina.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3 {
+        text-decoration: underline;
+
+    }
+    h2{
+        padding-top: 2%;
+    }
+    p{
+       width: 50%;
+       padding-top: 5%;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+
+}
+.bijela-kartica{
+    background-color: white;
+    position: absolute;
+    margin-left: 60%;
+    padding: 20px;
+    top: 30%;
+    height: 50%;
+    
+    li{
+         border-bottom: 1px solid black;
+         padding-top:25px ;
+         p{
+            font-size: 25px;
+         }
+
+
+    }
+
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #0b3c5d; 
+    min-width: 160px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #328cc1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+#kontakt h2 {
+    margin-top: 2%;
+    font-style: italic;
+    margin-bottom: 50px;
+
+}
+#kontakt{
+    max-width: 100%;
+    background: rgb(16, 179, 201);
+    padding:60px 40px;
+    height: 100%;
+}
+#kontakt p{
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer-kontakt
+{
+    background-color:#0a76cf;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.posalji {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+   
+}
+.posalji:hover{
+    background-color: rgb(33, 31, 31);
+    transition: 1.5s;
+}
+
+.bazeni-section {
+    background: #e9f3fb;
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 60px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card {
+    width: 100%;
+    background: #0c3b6b;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+     margin-bottom: 25px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    width: 35%;
+    height: 260px;
+    
+}
+
+.card-content {
+    width: 65%;
+    padding: 30px;
+    color: white;
+}
+
+.card-content h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #dbe9f6;
+}
+.betonski-bazen {
+    background: #0c3b6b;
+    padding: 50px 0;
+    height: 100%;
+}
+
+.beton-box {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+.beton-slika img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.beton-tekst h2 {
+    margin-bottom: 15px;
+}
+
+.beton-tekst p {
+    line-height: 1.5;
+    color: #dbe9f6;
+}
+
+@media (max-width: 768px) {
+    .Logo-slika {
+        display: block;
+        margin: 0 auto 15px auto;
+        position: relative;
+        left: 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        top: 0; 
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .Logo-slika {
+        display: block;
+        margin: 0 auto 15px auto;
+        position: relative;
+        left: 0;
+    }
+
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .beton-box {
+        flex-direction: column; 
+        padding: 0 15px;
+    }
+
+    .beton-slika img {
+        width: 100%;   
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .beton-tekst {
+        width: 100%;
+        text-align: center;
+    }
+
+    .beton-tekst h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .beton-tekst p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .glavni-footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .glavni-footer .mreze a {
+        margin: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
